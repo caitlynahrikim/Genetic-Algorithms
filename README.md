@@ -1,8 +1,6 @@
 
 # Homework Assignment 2: Genetic Algorithms
 
-**Due: Monday, September 22, 11:59 PM**
-
 Genetic algorithms are a class of approaches that draw loosely from the process of evolution.
 They allow us to optimize solutions to complex problems.
 This week, you will write code to implement a genetic algorithm.
