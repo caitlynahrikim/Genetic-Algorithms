@@ -207,10 +207,3 @@ An experiment consists of the following steps:
     2. Generate a new generation from the old, where each new individual is the offspring of two randomly chosen winners from the previous round, with some randomly chosen mutations.  (See details below.)
     3. Rank the new generation according to their fitness score.
 4. At the end of ***r*** rounds, take the individual(s) with the best fitness as the solution.
-
-## Kudos
-As an optional final step to this assignment, it would be nice to show that it can work with your own `DynamicArray` class in place of `ArrayList`.  Don't rewrite your existing classes, since we want to see them.  Instead, create copies renamed as `GA_Simulation_DA` and `Individual_DA`.  To make the shift work, you will need to address certain differences between the two array classes:
-* `ArrayList` offers the mutating method `addAll`.  You will either need to add an `addAll` method to `DynamicArray` or modify `GA_Simulation_DA` to use the functional version.
-* `ArrayList` has a method called `subList` that is similar to `extract`, except that it returns a shallow copy.  You can probably safely use `extract` in its place (or make one an alias for the other).
-* Instead of relying on the native `sort` function provided by `ArrayList`, you will need to add a `sort` function in `DynamicArray`.  You can call the `sort` method from class `Arrays` to do the work.
-* If you rely on iterators or a for-each loop in your `GA_Simulation` implementation, you may need to modify that code using indices.
